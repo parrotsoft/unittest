@@ -13,4 +13,10 @@ class EmpleadoTest extends TestCase
         $this->assertSame('lopezarizamiguel@gmail.com', $this->empleado->enviaCorreo());
         $this->assertSame('Miguel', $this->empleado->dameNombre());
     }
+
+    function testDameEstado()
+    {
+        $this->empleado = new Empleado('Miguel', 'lopezarizamiguel@gmail.com');
+        $this->assertTrue($this->empleado->dameEstado());
+    }
 }

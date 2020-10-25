@@ -23,5 +23,10 @@ class Empleado
         return $this->nombre;
     }
 
+    public function dameEstado()
+    {
+        return true;
+    }
+
 
 }
